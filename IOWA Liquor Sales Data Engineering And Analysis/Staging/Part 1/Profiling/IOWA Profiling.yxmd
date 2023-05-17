@@ -1,0 +1,898 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Iowa_Liquor_Sales.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Invoice/Item Number" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Date" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Store Number" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Store Name" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Address" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="City" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Zip Code" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Store Location" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="County Number" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="County" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Category" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Category Name" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Vendor Number" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Vendor Name" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Item Number" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Item Description" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Pack" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="State Bottle Cost" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="State Bottle Retail" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Bottles Sold" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Sale (Dollars)" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Volume Sold (Liters)" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Volume Sold (Gallons)" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Iowa_Liquor_Products.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Item Number" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="Category Name" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="Item Description" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="Vendor" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="Vendor Name" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="Pack" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="Inner Pack" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="Age" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="Proof" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="List Date" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="UPC" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="SCC" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="State Bottle Cost" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="State Case Cost" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="State Bottle Retail" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="Report Date" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Iowa_Liquor_Stores.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+            <Field name="Name" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+            <Field name="Store Status" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+            <Field name="Address" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+            <Field name="City" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+            <Field name="State" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+            <Field name="Zip Code" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+            <Field name="Store Address" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+            <Field name="Report Date" size="254" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="162" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Invoice/Item Number" selected="True" />
+            <Field field="Date" selected="True" />
+            <Field field="Store Number" selected="True" />
+            <Field field="Store Name" selected="True" />
+            <Field field="Address" selected="True" />
+            <Field field="City" selected="True" />
+            <Field field="Zip Code" selected="True" />
+            <Field field="Store Location" selected="True" />
+            <Field field="County Number" selected="True" />
+            <Field field="County" selected="True" />
+            <Field field="Category" selected="True" />
+            <Field field="Category Name" selected="True" />
+            <Field field="Vendor Number" selected="True" />
+            <Field field="Vendor Name" selected="True" />
+            <Field field="Item Number" selected="True" />
+            <Field field="Item Description" selected="True" />
+            <Field field="Pack" selected="True" />
+            <Field field="Bottle Volume (ml)" selected="True" />
+            <Field field="State Bottle Cost" selected="True" />
+            <Field field="State Bottle Retail" selected="True" />
+            <Field field="Bottles Sold" selected="True" />
+            <Field field="Sale (Dollars)" selected="True" />
+            <Field field="Volume Sold (Liters)" selected="True" />
+            <Field field="Volume Sold (Gallons)" selected="True" />
+            <Field field="*Unknown" selected="False" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Invoice/Item Number" size="16" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="String" />
+            <Field name="Date" size="10" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="String" />
+            <Field name="Store Number" size="6" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="String" />
+            <Field name="Store Name" size="58" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_String" />
+            <Field name="Address" size="55" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_String" />
+            <Field name="City" size="17" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_String" />
+            <Field name="Zip Code" size="5" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="String" />
+            <Field name="Store Location" size="45" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_String" />
+            <Field name="County Number" size="2" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="String" />
+            <Field name="County" size="13" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_String" />
+            <Field name="Category" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="Int32" />
+            <Field name="Category Name" size="36" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_String" />
+            <Field name="Vendor Number" size="3" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="String" />
+            <Field name="Vendor Name" size="67" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Item Number" size="7" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="String" />
+            <Field name="Item Description" size="63" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+            <Field name="Pack" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="Int16" />
+            <Field name="Bottle Volume (ml)" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="Int32" />
+            <Field name="State Bottle Cost" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="Double" />
+            <Field name="State Bottle Retail" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="Double" />
+            <Field name="Bottles Sold" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="Int16" />
+            <Field name="Sale (Dollars)" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="Double" />
+            <Field name="Volume Sold (Liters)" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="Double" />
+            <Field name="Volume Sold (Gallons)" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Sales.tsv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="186" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Item Number" selected="True" />
+            <Field field="Category Name" selected="True" />
+            <Field field="Item Description" selected="True" />
+            <Field field="Vendor" selected="True" />
+            <Field field="Vendor Name" selected="True" />
+            <Field field="Bottle Volume (ml)" selected="True" />
+            <Field field="Pack" selected="True" />
+            <Field field="Inner Pack" selected="True" />
+            <Field field="Age" selected="True" />
+            <Field field="Proof" selected="True" />
+            <Field field="List Date" selected="True" />
+            <Field field="UPC" selected="True" />
+            <Field field="SCC" selected="True" />
+            <Field field="State Bottle Cost" selected="True" />
+            <Field field="State Case Cost" selected="True" />
+            <Field field="State Bottle Retail" selected="True" />
+            <Field field="Report Date" selected="True" />
+            <Field field="*Unknown" selected="False" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Item Number" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="Int32" />
+            <Field name="Category Name" size="36" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_String" />
+            <Field name="Item Description" size="60" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+            <Field name="Vendor" size="3" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="String" />
+            <Field name="Vendor Name" size="60" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="V_String" />
+            <Field name="Bottle Volume (ml)" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="Int16" />
+            <Field name="Pack" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="Byte" />
+            <Field name="Inner Pack" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="Byte" />
+            <Field name="Age" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="Byte" />
+            <Field name="Proof" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="Byte" />
+            <Field name="List Date" size="10" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="String" />
+            <Field name="UPC" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="Int64" />
+            <Field name="SCC" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="Int64" />
+            <Field name="State Bottle Cost" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="Double" />
+            <Field name="State Case Cost" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="Double" />
+            <Field name="State Bottle Retail" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="Double" />
+            <Field name="Report Date" size="10" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Products.tsv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="186" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Store" selected="True" />
+            <Field field="Name" selected="True" />
+            <Field field="Store Status" selected="True" />
+            <Field field="Address" selected="True" />
+            <Field field="City" selected="True" />
+            <Field field="State" selected="True" />
+            <Field field="Zip Code" selected="True" />
+            <Field field="Store Address" selected="True" />
+            <Field field="Report Date" selected="True" />
+            <Field field="*Unknown" selected="False" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="6" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="String" />
+            <Field name="Name" size="58" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="V_String" />
+            <Field name="Store Status" size="1" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="String" />
+            <Field name="Address" size="55" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="V_String" />
+            <Field name="City" size="17" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="V_String" />
+            <Field name="State" size="2" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="String" />
+            <Field name="Zip Code" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="Int32" />
+            <Field name="Store Address" size="28" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="String" />
+            <Field name="Report Date" size="10" source="File: C:\Users\moins\Northeastern University\Bhagyashree Nair - Data - Iowa\Iowa_Liquor_Stores.tsv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings>
+        <Position x="378" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">Invoice/Item Number=True,Date=True,Store Number=True,Store Name=True,Address=True,City=True,Zip Code=True,Store Location=True,County Number=True,County=True,Category=True,Category Name=True,Vendor Number=True,Vendor Name=True,Item Number=True,Item Description=True,Pack=True,Bottle Volume (ml)=True,State Bottle Cost=True,State Bottle Retail=True,Bottles Sold=True,Sale (Dollars)=True,Volume Sold (Liters)=True,Volume Sold (Gallons)=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings>
+        <Position x="294" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">Item Number=True,Category Name=True,Item Description=True,Vendor=True,Vendor Name=True,Bottle Volume (ml)=True,Pack=True,Inner Pack=True,Age=True,Proof=True,List Date=True,UPC=True,SCC=True,State Bottle Cost=True,State Case Cost=True,State Bottle Retail=True,Report Date=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings>
+        <Position x="294" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">Store=True,Name=True,Store Status=True,Address=True,City=True,State=True,Zip Code=True,Store Address=True,Report Date=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+        <Position x="390" y="-6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Limit_UniqueCount>10000</Limit_UniqueCount>
+          <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+          <IsMetric value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+        <Position x="294" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Limit_UniqueCount>10000</Limit_UniqueCount>
+          <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+          <IsMetric value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+        <Position x="306" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Limit_UniqueCount>10000</Limit_UniqueCount>
+          <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+          <IsMetric value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="546" y="-30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_12264_d1755383a46e5041ad66dceeaa8490d1_\Engine_12264_8c5649e9c5a97d4480fe9e905b6d626d~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="570" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_12264_d1755383a46e5041ad66dceeaa8490d1_\Engine_12264_9a9ef8b781b25c4084af171eb77829d4~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="426" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_12264_d1755383a46e5041ad66dceeaa8490d1_\Engine_12264_206db8dde100e648b197bbbfba2e1b88~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="570" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_12264_d1755383a46e5041ad66dceeaa8490d1_\Engine_12264_afb3183db32105499350fb72c5dc9774~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="570" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_12264_d1755383a46e5041ad66dceeaa8490d1_\Engine_12264_b555cf1b96255747a910ba1b0cce6d67~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="582" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_12264_d1755383a46e5041ad66dceeaa8490d1_\Engine_12264_34c8042b6ca3e243b18c9d5806ff3cff~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="450" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+          <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_12264_d1755383a46e5041ad66dceeaa8490d1_\Engine_12264_d2b18ade0159894fa8c4f242009f8019~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="594" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_12264_d1755383a46e5041ad66dceeaa8490d1_\Engine_12264_d279f0616a66d043bda8034b1e1da44b~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="630" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_12264_d1755383a46e5041ad66dceeaa8490d1_\Engine_12264_694a67a8de2bed48856f6a60b08928c6~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="438" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+          <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_12264_d1755383a46e5041ad66dceeaa8490d1_\Engine_12264_aa1f205788e7e849be0c5b7f0c9959f7~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="450" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+          <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_12264_d1755383a46e5041ad66dceeaa8490d1_\Engine_12264_a607feb8232aa44ab2284537478ff351~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="414" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_12264_d1755383a46e5041ad66dceeaa8490d1_\Engine_12264_59bc7c89d86d1b40afb671caea658f5c~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="9" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Reports" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Interactive" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Reports" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Interactive" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Interactive" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Reports" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>IOWA Profiling</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="fd16d5cd-5b3d-4760-a70e-23cebd4e65de" />
+      <Telemetry>
+        <PreviousWorkflowId value="1378c246-a6bd-44d0-ad4b-6be19d9ff279" />
+        <OriginWorkflowId value="12234706-684c-4128-8176-5752b5d7337b" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

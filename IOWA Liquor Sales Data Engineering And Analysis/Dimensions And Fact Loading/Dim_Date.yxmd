@@ -1,0 +1,909 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\moins\Downloads\Dim_Date.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>65001</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Dim_Date.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="date_sk" size="254" source="File: C:\Users\moins\Downloads\Dim_Date.csv" type="V_WString" />
+            <Field name="date_nk" size="254" source="File: C:\Users\moins\Downloads\Dim_Date.csv" type="V_WString" />
+            <Field name="Date_Year" size="254" source="File: C:\Users\moins\Downloads\Dim_Date.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="354" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="date_sk" selected="True" />
+            <SelectField field="date_nk" selected="True" />
+            <SelectField field="Date_Year" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="438" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>date_nk</InputFieldName>
+          <Language>English</Language>
+          <Format>yyyy-MM-dd</Format>
+          <OutputFieldName>date</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert date_nk From:
+yyyy-MM-dd</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="570" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>date_nk</InputFieldName>
+          <Language>English</Language>
+          <Format>yyyy-MM-dd hh:mm:ss</Format>
+          <OutputFieldName>date_time_value</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert date_nk From:
+yyyy-MM-dd hh:mm:ss</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="702" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeFormat([date],'%Y Q') + ToString(Ceil(ToNumber(DateTimeFormat([Date],'%m'))/3))" field="Qtr_Year_Name" size="1073741823" type="V_WString" />
+            <FormulaField expression="Datetimeformat([date], '%B-%Y')" field="MonthYear_Name" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat(DateTimeAdd(DateTimeAdd(DateTimeTrim([date],&quot;month&quot;),1,&quot;month&quot;),-1,&quot;day&quot;),&quot;%d&quot;)" field="Day_in_Month" size="1073741823" type="V_WString" />
+            <FormulaField expression="Datetimeformat([date], '%j')" field="Day_in_Year" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeDiff(DateTimeToday(),[date],'days') " field="Day_Count" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat([date],&quot;%A&quot;)" field="Day_Name" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat([date],&quot;%a&quot;)" field="Day_Abr" size="1073741823" type="V_WString" />
+            <FormulaField expression="(DateTimeFormat([date],'%U'))" field="Week_in_Year" size="1073741823" type="V_WString" />
+            <FormulaField expression="ToNumber((FLOOR(DateTimeDiff(DateTimeAdd([date],4-Switch(DateTimeFormat([date],&quot;%a&quot;),7,&quot;Sun&quot;,1,&quot;Mon&quot;,2,&quot;Tue&quot;,3,&quot;Wed&quot;,4,&quot;Thu&quot;,5,&quot;Fri&quot;,6),&quot;days&quot;),DateTimeParse(ToString(ToNumber(DateTimeFormat(DateTimeAdd([date],4-Switch(DateTimeFormat([date],&quot;%a&quot;),7,&quot;Sun&quot;,1,&quot;Mon&quot;,2,&quot;Tue&quot;,3,&quot;Wed&quot;,4,&quot;Thu&quot;,5,&quot;Fri&quot;,6),&quot;days&quot;),&quot;%Y&quot;)))+'-01-01',&quot;%Y-%m-%d&quot;),&quot;days&quot;)/7)+1),2,&quot;0&quot;)&#xA;&#xA; " field="Week_Count" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat([date],&quot;%B&quot;)" field="Month_Name" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat([date],&quot;%b&quot;)" field="Month_Abr" size="1073741823" type="V_WString" />
+            <FormulaField expression="Tostring(Datetimemonth([date]))" field="Month_Count" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat(DateTimeTrim([date],'firstofmonth'),'%d')" field="First_Day_of_Month" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat(DateTimeTrim([date],'lastofmonth'),'%d')" field="Last_Day_of_Month" size="1073741823" type="V_WString" />
+            <FormulaField expression="Datetimeformat([date], '%Y')" field="Day_year" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Qtr_Year_Name = DateTimeFormat([date],'%Y Q') + ToString(Ceil(ToNumber(DateTimeF...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="798" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>QtrYear_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="894" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>MonthYear_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="990" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>MonthID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="1086" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>QtrID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1170" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="QtrID" selected="True" />
+            <SelectField field="MonthID" selected="True" />
+            <SelectField field="MonthYear_SK" selected="True" />
+            <SelectField field="QtrYear_SK" selected="True" />
+            <SelectField field="date_sk" selected="True" type="Int32" size="4" />
+            <SelectField field="date_nk" selected="True" type="Date" size="10" />
+            <SelectField field="Date_Year" selected="True" type="Int32" size="4" />
+            <SelectField field="date" selected="True" />
+            <SelectField field="date_time_value" selected="True" />
+            <SelectField field="Qtr_Year_Name" selected="True" type="V_String" size="20" />
+            <SelectField field="MonthYear_Name" selected="True" type="V_String" size="20" />
+            <SelectField field="Day_in_Month" selected="True" type="Int32" size="4" />
+            <SelectField field="Day_in_Year" selected="True" type="Int32" size="4" />
+            <SelectField field="Day_Count" selected="True" type="Int32" size="4" />
+            <SelectField field="Day_Name" selected="True" type="V_String" size="20" />
+            <SelectField field="Day_Abr" selected="True" type="V_String" size="3" />
+            <SelectField field="Week_in_Year" selected="True" type="Int64" size="8" />
+            <SelectField field="Week_Count" selected="True" type="Int32" size="4" />
+            <SelectField field="Month_Name" selected="True" type="V_String" size="20" />
+            <SelectField field="Month_Abr" selected="True" type="V_String" size="3" />
+            <SelectField field="Month_Count" selected="True" type="Int32" size="4" />
+            <SelectField field="First_Day_of_Month" selected="True" type="Int32" size="4" />
+            <SelectField field="Last_Day_of_Month" selected="True" type="Int32" size="4" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* 
+from iowa_staging.stg_iowa_liquor_sales_alteryx</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=IOWA_Liquor
+Query=select iowa_staging.stg_iowa...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Invoice/Item Number" size="50" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="V_WString" />
+            <Field name="Store Number" size="50" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="V_WString" />
+            <Field name="Store Name" size="100" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="V_WString" />
+            <Field name="Address" size="100" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="V_WString" />
+            <Field name="City" size="30" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="V_WString" />
+            <Field name="Zip Code" size="10" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="WString" />
+            <Field name="Store Location" size="80" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="V_WString" />
+            <Field name="County Number" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="Int32" />
+            <Field name="County" size="20" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="V_WString" />
+            <Field name="Category" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="Int32" />
+            <Field name="Category Name" size="50" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="V_WString" />
+            <Field name="Vendor Number" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="Int32" />
+            <Field name="Vendor Name" size="100" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="V_WString" />
+            <Field name="Item Number" size="20" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="V_WString" />
+            <Field name="Item Description" size="100" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="V_WString" />
+            <Field name="Pack" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="Int32" />
+            <Field name="Bottle Volume (ml)" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="Int32" />
+            <Field name="State Bottle Cost" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="Double" />
+            <Field name="State Bottle Retail" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="Double" />
+            <Field name="Bottles Sold" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="Int32" />
+            <Field name="Sale (Dollars)" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="Double" />
+            <Field name="Volume Sold (Liters)" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="Double" />
+            <Field name="Volume Sold (Gallons)" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="Double" />
+            <Field name="DATE" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="DateTime" />
+            <Field name="Longitude" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="Double" />
+            <Field name="Latitude" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="DATE" selected="True" type="Date" size="10" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1446" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="date_sk" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="390" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="True" />
+          <InputFieldName>DATE</InputFieldName>
+          <Language>English</Language>
+          <Format>yyyy-MM-dd</Format>
+          <OutputFieldName>date_nk</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert DATE To:
+yyyy-MM-dd</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="486" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>date_nk</InputFieldName>
+          <Language>English</Language>
+          <Format>yyyy-MM-dd hh:mm:ss</Format>
+          <OutputFieldName>date_time_value</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert date_nk From:
+yyyy-MM-dd hh:mm:ss</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="834" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>QtrYear_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="918" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>MonthYear_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="1014" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>MonthID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="1110" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>QtrID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="678" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Date_SK</Field>
+          <RegExExpression value="-" />
+          <CaseInsensitve value="True" />
+          <Method>Replace</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>Date_SK</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="No Marked Groups Found" type="No Marked Groups Found" size="No Marked Groups Found" />
+          </ParseComplex>
+          <Match>
+            <Field>DATE_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="582" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="True" />
+          <InputFieldName>DATE</InputFieldName>
+          <Language>English</Language>
+          <Format>yyyy-MM-dd</Format>
+          <OutputFieldName>Date_SK</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert DATE To:
+yyyy-MM-dd</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="762" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeFormat([date],'%Y Q') + ToString(Ceil(ToNumber(DateTimeFormat([Date],'%m'))/3))" field="Qtr_Year_Name" size="1073741823" type="V_WString" />
+            <FormulaField expression="Datetimeformat([date], '%B-%Y')" field="MonthYear_Name" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat(DateTimeAdd(DateTimeAdd(DateTimeTrim([date],&quot;month&quot;),1,&quot;month&quot;),-1,&quot;day&quot;),&quot;%d&quot;)" field="Day_in_Month" size="1073741823" type="V_WString" />
+            <FormulaField expression="Datetimeformat([date], '%j')" field="Day_in_Year" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeDiff(DateTimeToday(),[date],'days') " field="Day_Count" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat([date],&quot;%A&quot;)" field="Day_Name" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat([date],&quot;%a&quot;)" field="Day_Abr" size="1073741823" type="V_WString" />
+            <FormulaField expression="(DateTimeFormat([date],'%U'))" field="Week_in_Year" size="1073741823" type="V_WString" />
+            <FormulaField expression="ToNumber((FLOOR(DateTimeDiff(DateTimeAdd([date],4-Switch(DateTimeFormat([date],&quot;%a&quot;),7,&quot;Sun&quot;,1,&quot;Mon&quot;,2,&quot;Tue&quot;,3,&quot;Wed&quot;,4,&quot;Thu&quot;,5,&quot;Fri&quot;,6),&quot;days&quot;),DateTimeParse(ToString(ToNumber(DateTimeFormat(DateTimeAdd([date],4-Switch(DateTimeFormat([date],&quot;%a&quot;),7,&quot;Sun&quot;,1,&quot;Mon&quot;,2,&quot;Tue&quot;,3,&quot;Wed&quot;,4,&quot;Thu&quot;,5,&quot;Fri&quot;,6),&quot;days&quot;),&quot;%Y&quot;)))+'-01-01',&quot;%Y-%m-%d&quot;),&quot;days&quot;)/7)+1),2,&quot;0&quot;)&#xA;&#xA; " field="Week_Count" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat([date],&quot;%B&quot;)" field="Month_Name" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat([date],&quot;%b&quot;)" field="Month_Abr" size="1073741823" type="V_WString" />
+            <FormulaField expression="Tostring(Datetimemonth([date]))" field="Month_Count" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat(DateTimeTrim([date],'firstofmonth'),'%d')" field="First_Day_of_Month" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat(DateTimeTrim([date],'lastofmonth'),'%d')" field="Last_Day_of_Month" size="1073741823" type="V_WString" />
+            <FormulaField expression="Datetimeformat([date], '%Y')" field="Day_year" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeYear([DATE])" field="Date_year" size="4" type="Int32" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Qtr_Year_Name = DateTimeFormat([date],'%Y Q') + ToString(Ceil(ToNumber(DateTimeF...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1194" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="QtrID" selected="True" />
+            <SelectField field="MonthID" selected="True" />
+            <SelectField field="MonthYear_SK" selected="True" />
+            <SelectField field="QtrYear_SK" selected="True" />
+            <SelectField field="DATE" selected="True" />
+            <SelectField field="date_nk" selected="True" type="Date" size="10" />
+            <SelectField field="date_time_value" selected="True" />
+            <SelectField field="Date_SK" selected="True" type="Int32" size="4" />
+            <SelectField field="Qtr_Year_Name" selected="True" type="V_String" size="20" />
+            <SelectField field="MonthYear_Name" selected="True" type="V_String" size="20" />
+            <SelectField field="Day_in_Month" selected="True" type="Int32" size="4" />
+            <SelectField field="Day_in_Year" selected="True" type="Int32" size="4" />
+            <SelectField field="Day_Count" selected="True" type="Int32" size="4" />
+            <SelectField field="Day_Name" selected="True" type="V_String" size="20" />
+            <SelectField field="Day_Abr" selected="True" type="V_String" size="3" />
+            <SelectField field="Week_in_Year" selected="True" type="Int64" size="8" />
+            <SelectField field="Week_Count" selected="True" type="Int32" size="4" />
+            <SelectField field="Month_Name" selected="True" type="V_String" size="20" />
+            <SelectField field="Month_Abr" selected="True" type="V_String" size="3" />
+            <SelectField field="Month_Count" selected="True" type="Int32" size="4" />
+            <SelectField field="First_Day_of_Month" selected="True" type="Int32" size="4" />
+            <SelectField field="Last_Day_of_Month" selected="True" type="Int32" size="4" />
+            <SelectField field="Date_year" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1302" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="QtrID" source="RecordID: Starting Value=1" type="Int32" column="1" />
+                <Field name="MonthID" source="RecordID: Starting Value=1" type="Int32" column="2" />
+                <Field name="MonthYear_SK" source="RecordID: Starting Value=1" type="Int32" column="3" />
+                <Field name="QtrYear_SK" source="RecordID: Starting Value=1" type="Int32" column="4" />
+                <Field name="date_sk" source="File: C:\Users\moins\Downloads\Dim_Date.csv" type="Int64" column="5" />
+                <Field name="date_nk" source="File: C:\Users\moins\Downloads\Dim_Date.csv" type="Date" column="6" />
+                <Field name="Date_Year" size="254" source="File: C:\Users\moins\Downloads\Dim_Date.csv" type="V_WString" column="7" />
+                <Field name="date" source="DateTime: To yyyy-MM-dd" type="Date" column="8" />
+                <Field name="date_time_value" source="DateTime: To yyyy-MM-dd hh:mm:ss" type="DateTime" column="9" />
+                <Field name="Qtr_Year_Name" size="20" source="Formula: DateTimeFormat([date],'%Y Q') + ToString(Ceil(ToNumber(DateTimeFormat([Date],'%m'))/3))" type="V_String" column="10" />
+                <Field name="MonthYear_Name" size="20" source="Formula: Datetimeformat([date], '%B-%Y')" type="V_String" column="11" />
+                <Field name="Day_in_Month" source="Formula: DateTimeFormat(DateTimeAdd(DateTimeAdd(DateTimeTrim([date],&quot;month&quot;),1,&quot;month&quot;),-1,&quot;day&quot;),&quot;%d&quot;)" type="Int32" column="12" />
+                <Field name="Day_in_Year" source="Formula: Datetimeformat([date], '%j')" type="Int32" column="13" />
+                <Field name="Day_Count" source="Formula: DateTimeDiff(DateTimeToday(),[date],'days') " type="Int32" column="14" />
+                <Field name="Day_Name" size="20" source="Formula: DateTimeFormat([date],&quot;%A&quot;)" type="V_String" column="15" />
+                <Field name="Day_Abr" size="3" source="Formula: DateTimeFormat([date],&quot;%a&quot;)" type="V_String" column="16" />
+                <Field name="Week_in_Year" source="Formula: (DateTimeFormat([date],'%U'))" type="Int64" column="17" />
+                <Field name="Week_Count" source="Formula: ToNumber((FLOOR(DateTimeDiff(DateTimeAdd([date],4-Switch(DateTimeFormat([date],&quot;%a&quot;),7,&quot;Sun&quot;,1,&quot;Mon&quot;,2,&quot;Tue&quot;,3,&quot;Wed&quot;,4,&quot;Thu&quot;,5,&quot;Fri&quot;,6),&quot;days&quot;),DateTimeParse(ToString(ToNumber(DateTimeFormat(DateTimeAdd([date],4-Switch(DateTimeFormat([date],&quot;%a&quot;),7,&quot;Sun&quot;,1,&quot;Mon&quot;,2,&quot;Tue&quot;,3,&quot;Wed&quot;,4,&quot;Thu&quot;,5,&quot;Fri&quot;,6),&quot;days&quot;),&quot;%Y&quot;)))+'-01-01',&quot;%Y-%m-%d&quot;),&quot;days&quot;)/7)+1),2,&quot;0&quot;)&#xA;&#xA; " type="Int32" column="18" />
+                <Field name="Month_Name" size="20" source="Formula: DateTimeFormat([date],&quot;%B&quot;)" type="V_String" column="19" />
+                <Field name="Month_Abr" size="3" source="Formula: DateTimeFormat([date],&quot;%b&quot;)" type="V_String" column="20" />
+                <Field name="Month_Count" source="Formula: Tostring(Datetimemonth([date]))" type="Int32" column="21" />
+                <Field name="First_Day_of_Month" source="Formula: DateTimeFormat(DateTimeTrim([date],'firstofmonth'),'%d')" type="Int32" column="22" />
+                <Field name="Last_Day_of_Month" source="Formula: DateTimeFormat(DateTimeTrim([date],'lastofmonth'),'%d')" type="Int32" column="23" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="QtrID" source="RecordID: Starting Value=1" type="Int32" column="1" />
+                <Field name="MonthID" source="RecordID: Starting Value=1" type="Int32" column="2" />
+                <Field name="MonthYear_SK" source="RecordID: Starting Value=1" type="Int32" column="3" />
+                <Field name="QtrYear_SK" source="RecordID: Starting Value=1" type="Int32" column="4" />
+                <Field name="Date_SK" source="DateTime: From yyyy-MM-dd" type="Int64" column="5" />
+                <Field name="date_nk" source="DateTime: From yyyy-MM-dd" type="Date" column="6" />
+                <Field name="Date_year" source="Formula: DateTimeYear([DATE])" type="Int32" column="7" />
+                <Field name="DATE" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select iowa_staging.stg_iowa_liquor_sales_alteryx.* &#xA;from iowa_staging.stg_iowa_liquor_sales_alteryx" type="Date" column="8" />
+                <Field name="date_time_value" source="DateTime: To yyyy-MM-dd hh:mm:ss" type="DateTime" column="9" />
+                <Field name="Qtr_Year_Name" size="20" source="Formula: DateTimeFormat([date],'%Y Q') + ToString(Ceil(ToNumber(DateTimeFormat([Date],'%m'))/3))" type="V_String" column="10" />
+                <Field name="MonthYear_Name" size="20" source="Formula: Datetimeformat([date], '%B-%Y')" type="V_String" column="11" />
+                <Field name="Day_in_Month" source="Formula: DateTimeFormat(DateTimeAdd(DateTimeAdd(DateTimeTrim([date],&quot;month&quot;),1,&quot;month&quot;),-1,&quot;day&quot;),&quot;%d&quot;)" type="Int32" column="12" />
+                <Field name="Day_in_Year" source="Formula: Datetimeformat([date], '%j')" type="Int32" column="13" />
+                <Field name="Day_Count" source="Formula: DateTimeDiff(DateTimeToday(),[date],'days') " type="Int32" column="14" />
+                <Field name="Day_Name" size="20" source="Formula: DateTimeFormat([date],&quot;%A&quot;)" type="V_String" column="15" />
+                <Field name="Day_Abr" size="3" source="Formula: DateTimeFormat([date],&quot;%a&quot;)" type="V_String" column="16" />
+                <Field name="Week_in_Year" source="Formula: (DateTimeFormat([date],'%U'))" type="Int64" column="17" />
+                <Field name="Week_Count" source="Formula: ToNumber((FLOOR(DateTimeDiff(DateTimeAdd([date],4-Switch(DateTimeFormat([date],&quot;%a&quot;),7,&quot;Sun&quot;,1,&quot;Mon&quot;,2,&quot;Tue&quot;,3,&quot;Wed&quot;,4,&quot;Thu&quot;,5,&quot;Fri&quot;,6),&quot;days&quot;),DateTimeParse(ToString(ToNumber(DateTimeFormat(DateTimeAdd([date],4-Switch(DateTimeFormat([date],&quot;%a&quot;),7,&quot;Sun&quot;,1,&quot;Mon&quot;,2,&quot;Tue&quot;,3,&quot;Wed&quot;,4,&quot;Thu&quot;,5,&quot;Fri&quot;,6),&quot;days&quot;),&quot;%Y&quot;)))+'-01-01',&quot;%Y-%m-%d&quot;),&quot;days&quot;)/7)+1),2,&quot;0&quot;)&#xA;&#xA; " type="Int32" column="18" />
+                <Field name="Month_Name" size="20" source="Formula: DateTimeFormat([date],&quot;%B&quot;)" type="V_String" column="19" />
+                <Field name="Month_Abr" size="3" source="Formula: DateTimeFormat([date],&quot;%b&quot;)" type="V_String" column="20" />
+                <Field name="Month_Count" source="Formula: Tostring(Datetimemonth([date]))" type="Int32" column="21" />
+                <Field name="First_Day_of_Month" source="Formula: DateTimeFormat(DateTimeTrim([date],'firstofmonth'),'%d')" type="Int32" column="22" />
+                <Field name="Last_Day_of_Month" source="Formula: DateTimeFormat(DateTimeTrim([date],'lastofmonth'),'%d')" type="Int32" column="23" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="186" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="DATE" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1542" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1638" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=IOWA RELOAD;UID=root;PWD=__EncPwd1__|||dim_date</File>
+          <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=IOWA RELOAD
+Query=dim_date</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Unique" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Unique" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Dim_Date</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="c8ba4f87-853a-41fa-a3d2-0f18357713b5" />
+      <Telemetry>
+        <PreviousWorkflowId value="0c745eeb-73ac-48d8-a2ea-77f889a11775" />
+        <OriginWorkflowId value="0c745eeb-73ac-48d8-a2ea-77f889a11775" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

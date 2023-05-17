@@ -1,0 +1,3605 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="155">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="175" y="2957" width="1473" height="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Dim City reloaded</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="140">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="200" y="3078" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* 
+from stg_iowa_liquor_sales_alteryx</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Staging
+Query=select stg_iowa_liquor_sales...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="50" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Store Number" size="50" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Store Name" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Address" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="City" size="30" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Zip Code" size="10" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="WString" />
+                <Field name="Store Location" size="80" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="County Number" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="County" size="20" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Category" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="Category Name" size="50" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Vendor Number" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="Vendor Name" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Item Number" size="20" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Item Description" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Pack" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="Bottle Volume (ml)" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="State Bottle Cost" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="State Bottle Retail" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Bottles Sold" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="Sale (Dollars)" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Volume Sold (Liters)" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Volume Sold (Gallons)" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="DATE" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="DateTime" />
+                <Field name="Longitude" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Latitude" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="141">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="212" y="3294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* 
+from dim_iowa_city</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Liquor
+Query=select dim_iowa_city.* 
+fro...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="PrimaryKey" name="City_SK" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="Int32" />
+                <Field name="City" size="50" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="V_WString" />
+                <Field name="FIPS" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="Int32" />
+                <Field name="Latitude" size="30" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="V_WString" />
+                <Field name="Longitude" size="30" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="V_WString" />
+                <Field name="DI_JobID" size="80" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="V_WString" />
+                <Field name="DI_CreateDate" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="142">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="356" y="3078" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="City" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="143">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="812" y="3078" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="City" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="City" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_City" selected="True" input="Left_" />
+                    <SelectField field="Left_FIPS" selected="True" input="Left_" />
+                    <SelectField field="Left_Latitude" selected="True" input="Left_" />
+                    <SelectField field="Left_Longitude" selected="True" input="Left_" />
+                    <SelectField field="Right_City_SK" selected="True" input="Right_" />
+                    <SelectField field="Right_City" selected="False" rename="Right_City" input="Right_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="144">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="452" y="3078" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF IsNull([City]) THEN 'Unknown' ELSE [City]  ENDIF" field="City" size="30" type="V_WString" />
+                <FormulaField expression="-9999" field="FIPS" size="1073741823" type="V_WString" />
+                <FormulaField expression="'0'" field="Latitude" size="1073741823" type="V_WString" />
+                <FormulaField expression="'0'" field="Longitude" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>City = IF IsNull([City]) THEN 'Unknown' ELSE [City]  ENDIF
+FIPS = -9999
+Latitude...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="149">
+          <GuiSettings>
+            <Position x="380" y="3294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"City"</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">False</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">True</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="150">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="1280" y="3018" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>City_SK</FieldName>
+              <StartValue>966</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="151">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1172" y="3018" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="ToNumber(REPLACE(REPLACE(REPLACE([DI_CreateDate],'-',''),' ',''),':',''))" field="DI_JobID" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DI_JobID = ToNumber(REPLACE(REPLACE(REPLACE([DI_CreateDate],'-',''),' ',''),':',...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="152">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1040" y="3006" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="153">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1400" y="3018" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="City_SK" selected="True" />
+                <SelectField field="City" selected="True" size="50" />
+                <SelectField field="FIPS" selected="True" type="Int32" size="4" />
+                <SelectField field="Latitude" selected="True" size="80" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="DI_CreateDate" selected="True" type="DateTime" size="19" />
+                <SelectField field="DI_JobID" selected="True" size="80" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="154">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1520" y="3018" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||Dim_iowa_city</File>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="City_SK" Dest="City_SK" />
+                    <Field Source="City" Dest="City" />
+                    <Field Source="FIPS" Dest="FIPS" />
+                    <Field Source="Latitude" Dest="Latitude" />
+                    <Field Source="Longitude" Dest="Longitude" />
+                    <Field Source="DI_CreateDate" Dest="DI_CreateDate" />
+                    <Field Source="DI_JobID" Dest="DI_JobID" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Append</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Liquor
+Query=Dim_iowa_city</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="145">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="932" y="3018" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="City" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="93" y="54" width="920" height="266" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>DIM CITY</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="886" y="115" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_20496_77c6c10bee6f2b49a3ed16222278767f_\Engine_20496_5e759e582a240e47ab2c297532d42969~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="118" y="125" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_city_population_by_year_alteryx.* 
+from stg_iowa_city_population_by_year_alteryx</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Staging
+Query=select stg_iowa_city_populat...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="FIPS" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_city_population_by_year_alteryx.* &#xA;from stg_iowa_city_population_by_year_alteryx" type="Int32" />
+                <Field name="City" size="20" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_city_population_by_year_alteryx.* &#xA;from stg_iowa_city_population_by_year_alteryx" type="V_WString" />
+                <Field name="Population" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_city_population_by_year_alteryx.* &#xA;from stg_iowa_city_population_by_year_alteryx" type="Int32" />
+                <Field name="Primary Point" size="30" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_city_population_by_year_alteryx.* &#xA;from stg_iowa_city_population_by_year_alteryx" type="WString" />
+                <Field name="Year" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_city_population_by_year_alteryx.* &#xA;from stg_iowa_city_population_by_year_alteryx" type="DateTime" />
+                <Field name="Longitude" size="30" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_city_population_by_year_alteryx.* &#xA;from stg_iowa_city_population_by_year_alteryx" type="WString" />
+                <Field name="Latitude" size="30" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_city_population_by_year_alteryx.* &#xA;from stg_iowa_city_population_by_year_alteryx" type="WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="250" y="125" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FIPS" selected="True" />
+                <SelectField field="City" selected="True" size="50" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="Latitude" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="382" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="FIPS" />
+                <Field field="City" />
+                <Field field="Longitude" />
+                <Field field="Latitude" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="478" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+                <FormulaField expression="IF IsNull([Longitude]) THEN '0' ELSE [Longitude] ENDIF" field="Longitude" size="30" type="WString" />
+                <FormulaField expression="IF IsNull([Latitude]) THEN '0' ELSE [Latitude] ENDIF" field="Latitude" size="30" type="WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DI_CreateDate = DateTimeNow()
+Longitude = IF IsNull([Longitude]) THEN '0' ELSE [...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="598" y="127" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="ToNumber(REPLACE(REPLACE(REPLACE([DI_CreateDate],'-',''),' ',''),':',''))" field="DI_JobID" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DI_JobID = ToNumber(REPLACE(REPLACE(REPLACE([DI_CreateDate],'-',''),' ',''),':',...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="694" y="127" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>City_SK</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="790" y="115" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="City_SK" selected="True" />
+                <SelectField field="FIPS" selected="True" />
+                <SelectField field="City" selected="True" type="V_String" size="50" />
+                <SelectField field="Longitude" selected="True" type="V_WString" size="30" />
+                <SelectField field="Latitude" selected="True" type="V_WString" size="30" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="DI_JobID" selected="True" size="80" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="885" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||Dim_iowa_city</File>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="City_SK" Dest="City_SK" />
+                    <Field Source="FIPS" Dest="FIPS" />
+                    <Field Source="City" Dest="City" />
+                    <Field Source="Longitude" Dest="Longitude" />
+                    <Field Source="Latitude" Dest="Latitude" />
+                    <Field Source="DI_CreateDate" Dest="DI_CreateDate" />
+                    <Field Source="DI_JobID" Dest="DI_JobID" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Upsert</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Liquor
+Query=Dim_iowa_city</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="92" y="353" width="825" height="279" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>DIM County</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="117" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_county_population_by_year_alteryx.* 
+from stg_iowa_county_population_by_year_alteryx</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Staging
+Query=select stg_iowa_county_popul...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="FIPS" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_county_population_by_year_alteryx.* &#xA;from stg_iowa_county_population_by_year_alteryx" type="Int16" />
+                <Field name="County" size="20" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_county_population_by_year_alteryx.* &#xA;from stg_iowa_county_population_by_year_alteryx" type="V_WString" />
+                <Field name="Population" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_county_population_by_year_alteryx.* &#xA;from stg_iowa_county_population_by_year_alteryx" type="Int32" />
+                <Field name="Primary Point" size="44" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_county_population_by_year_alteryx.* &#xA;from stg_iowa_county_population_by_year_alteryx" type="V_WString" />
+                <Field name="Year" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_county_population_by_year_alteryx.* &#xA;from stg_iowa_county_population_by_year_alteryx" type="DateTime" />
+                <Field name="Longitude" size="44" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_county_population_by_year_alteryx.* &#xA;from stg_iowa_county_population_by_year_alteryx" type="V_WString" />
+                <Field name="Latitude" size="44" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_county_population_by_year_alteryx.* &#xA;from stg_iowa_county_population_by_year_alteryx" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="237" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FIPS" selected="True" />
+                <SelectField field="County" selected="True" size="50" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="Latitude" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="345" y="425" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="FIPS" />
+                <Field field="County" />
+                <Field field="Longitude" />
+                <Field field="Latitude" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="789" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_20496_77c6c10bee6f2b49a3ed16222278767f_\Engine_20496_053742bee4c1e748860053e0c8a57900~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="417" y="402" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+                <FormulaField expression="IF IsNull([Latitude]) THEN '0' ELSE [Latitude] ENDIF" field="Latitude" size="44" type="V_WString" />
+                <FormulaField expression="IF IsNull([Longitude]) THEN '0' ELSE [Longitude] ENDIF" field="Longitude" size="44" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DI_CreateDate = DateTimeNow()
+Latitude = IF IsNull([Latitude]) THEN '0' ELSE [La...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="537" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="ToNumber(REPLACE(REPLACE(REPLACE([DI_CreateDate],'-',''),' ',''),':',''))" field="DI_JobID" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DI_JobID = ToNumber(REPLACE(REPLACE(REPLACE([DI_CreateDate],'-',''),' ',''),':',...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="633" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>County_SK</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="717" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="County_SK" selected="True" />
+                <SelectField field="FIPS" selected="True" />
+                <SelectField field="County" selected="True" type="V_String" size="50" />
+                <SelectField field="Longitude" selected="True" size="30" />
+                <SelectField field="Latitude" selected="True" size="30" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="DI_JobID" selected="True" size="80" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="789" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||Dim_iowa_county</File>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="County_SK" Dest="County_SK" />
+                    <Field Source="FIPS" Dest="FIPS" />
+                    <Field Source="County" Dest="County" />
+                    <Field Source="Longitude" Dest="Longitude" />
+                    <Field Source="Latitude" Dest="Latitude" />
+                    <Field Source="DI_CreateDate" Dest="DI_CreateDate" />
+                    <Field Source="DI_JobID" Dest="DI_JobID" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Upsert</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Liquor
+Query=Dim_iowa_county</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="151" y="1661" width="937" height="381" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>fact county</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="176" y="1734" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_county_population_by_year_alteryx.* 
+from stg_iowa_county_population_by_year_alteryx</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Staging
+Query=select stg_iowa_county_popul...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="FIPS" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_county_population_by_year_alteryx.* &#xA;from stg_iowa_county_population_by_year_alteryx" type="Int16" />
+                <Field name="County" size="20" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_county_population_by_year_alteryx.* &#xA;from stg_iowa_county_population_by_year_alteryx" type="V_WString" />
+                <Field name="Population" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_county_population_by_year_alteryx.* &#xA;from stg_iowa_county_population_by_year_alteryx" type="Int32" />
+                <Field name="Primary Point" size="44" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_county_population_by_year_alteryx.* &#xA;from stg_iowa_county_population_by_year_alteryx" type="V_WString" />
+                <Field name="Year" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_county_population_by_year_alteryx.* &#xA;from stg_iowa_county_population_by_year_alteryx" type="DateTime" />
+                <Field name="Longitude" size="44" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_county_population_by_year_alteryx.* &#xA;from stg_iowa_county_population_by_year_alteryx" type="V_WString" />
+                <Field name="Latitude" size="44" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_county_population_by_year_alteryx.* &#xA;from stg_iowa_county_population_by_year_alteryx" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="284" y="1734" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FIPS" selected="True" />
+                <SelectField field="County" selected="True" size="50" />
+                <SelectField field="Population" selected="True" />
+                <SelectField field="Year" selected="True" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="Latitude" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="368" y="1734" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Datetimeformat([Year], '%Y')" field="Population Year" size="2147483647" type="V_String" />
+                <FormulaField expression="IF IsNull([Latitude]) THEN '0' ELSE [Latitude] ENDIF" field="Latitude" size="44" type="V_WString" />
+                <FormulaField expression="IF IsNull([Longitude]) THEN '0' ELSE [Longitude] ENDIF" field="Longitude" size="44" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Population Year = Datetimeformat([Year], '%Y')
+Latitude = IF IsNull([Latitude]) ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="861" y="1734" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="County_Pop_SK" selected="True" />
+                <SelectField field="FIPS" selected="True" />
+                <SelectField field="County" selected="True" />
+                <SelectField field="Population" selected="True" />
+                <SelectField field="Year" selected="True" rename="DateAsOf" type="Date" size="10" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="Latitude" selected="True" />
+                <SelectField field="Population Year" selected="True" />
+                <SelectField field="County_SK" selected="True" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="DI_JobID" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="957" y="1710" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_4532_71b72e4d37e1144d904fcdee045724c3_\Engine_4532_b2b594ca6eca6a43bae38435e069bdc6~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="573" y="1734" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>County_Pop_SK</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="765" y="1734" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="ToNumber(REPLACE(REPLACE(REPLACE([DI_CreateDate],'-',''),' ',''),':',''))" field="DI_JobID" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DI_JobID = ToNumber(REPLACE(REPLACE(REPLACE([DI_CreateDate],'-',''),' ',''),':',...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="669" y="1734" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="489" y="1746" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="County" />
+                <Field field="FIPS" />
+                <Field field="Latitude" />
+                <Field field="Longitude" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="County" />
+                <Field field="FIPS" />
+                <Field field="Latitude" />
+                <Field field="Longitude" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_FIPS" selected="True" input="Left_" />
+                    <SelectField field="Left_County" selected="True" input="Left_" />
+                    <SelectField field="Left_Population" selected="True" input="Left_" />
+                    <SelectField field="Left_Year" selected="True" input="Left_" />
+                    <SelectField field="Left_Longitude" selected="True" input="Left_" />
+                    <SelectField field="Left_Latitude" selected="True" input="Left_" />
+                    <SelectField field="Left_Population Year" selected="True" input="Left_" />
+                    <SelectField field="Right_County_SK" selected="True" input="Right_" />
+                    <SelectField field="Right_County" selected="False" rename="Right_County" input="Right_" />
+                    <SelectField field="Right_FIPS" selected="False" rename="Right_FIPS" input="Right_" />
+                    <SelectField field="Right_Latitude" selected="False" rename="Right_Latitude" input="Right_" />
+                    <SelectField field="Right_Longitude" selected="False" rename="Right_Longitude" input="Right_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="249" y="1866" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_county.* 
+from dim_iowa_county</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Liquor
+Query=select dim_iowa_county.* 
+f...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="PrimaryKey" name="County_SK" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_county.* &#xA;from dim_iowa_county" type="Int32" />
+                <Field name="County" size="50" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_county.* &#xA;from dim_iowa_county" type="V_WString" />
+                <Field name="FIPS" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_county.* &#xA;from dim_iowa_county" type="Int32" />
+                <Field name="Latitude" size="30" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_county.* &#xA;from dim_iowa_county" type="V_WString" />
+                <Field name="Longitude" size="30" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_county.* &#xA;from dim_iowa_county" type="V_WString" />
+                <Field name="DI_JobID" size="80" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_county.* &#xA;from dim_iowa_county" type="V_WString" />
+                <Field name="DI_CreateDate" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_county.* &#xA;from dim_iowa_county" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="369" y="1866" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="County_SK" selected="True" />
+                <SelectField field="County" selected="True" />
+                <SelectField field="FIPS" selected="True" />
+                <SelectField field="Latitude" selected="True" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="957" y="1770" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||FCT_iowa_county_population_by_year</File>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="County_Pop_SK" Dest="County_Pop_SK" />
+                    <Field Source="FIPS" Dest="FIPS" />
+                    <Field Source="County" Dest="County" />
+                    <Field Source="Population" Dest="Population" />
+                    <Field Source="DateAsOf" Dest="DateAsOf" />
+                    <Field Source="Longitude" Dest="Longitude" />
+                    <Field Source="Latitude" Dest="Latitude" />
+                    <Field Source="Population Year" Dest="Population_Year" />
+                    <Field Source="County_SK" Dest="County_SK" />
+                    <Field Source="DI_CreateDate" Dest="DI_CreateDate" />
+                    <Field Source="DI_JobID" Dest="DI_JobID" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Upsert</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Liquor
+Query=FCT_iowa_county_population_b...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="140" y="1289" width="1212" height="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>fact_city</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="165" y="1338" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_city_population_by_year_alteryx.* 
+from stg_iowa_city_population_by_year_alteryx</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Staging
+Query=select stg_iowa_city_populat...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="FIPS" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_city_population_by_year_alteryx.* &#xA;from stg_iowa_city_population_by_year_alteryx" type="Int32" />
+                <Field name="City" size="20" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_city_population_by_year_alteryx.* &#xA;from stg_iowa_city_population_by_year_alteryx" type="V_WString" />
+                <Field name="Population" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_city_population_by_year_alteryx.* &#xA;from stg_iowa_city_population_by_year_alteryx" type="Int32" />
+                <Field name="Primary Point" size="30" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_city_population_by_year_alteryx.* &#xA;from stg_iowa_city_population_by_year_alteryx" type="WString" />
+                <Field name="Year" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_city_population_by_year_alteryx.* &#xA;from stg_iowa_city_population_by_year_alteryx" type="DateTime" />
+                <Field name="Longitude" size="30" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_city_population_by_year_alteryx.* &#xA;from stg_iowa_city_population_by_year_alteryx" type="WString" />
+                <Field name="Latitude" size="30" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_city_population_by_year_alteryx.* &#xA;from stg_iowa_city_population_by_year_alteryx" type="WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="285" y="1338" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FIPS" selected="True" />
+                <SelectField field="City" selected="True" size="50" />
+                <SelectField field="Population" selected="True" />
+                <SelectField field="Year" selected="True" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="Latitude" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="381" y="1338" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Datetimeformat([Year], '%Y')" field="Population Year" size="2147483647" type="V_String" />
+                <FormulaField expression="IF IsNull([Latitude]) THEN '0' ELSE [Latitude] ENDIF" field="Latitude" size="30" type="WString" />
+                <FormulaField expression="IF IsNull([Longitude]) THEN '0' ELSE [Longitude] ENDIF" field="Longitude" size="30" type="WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Population Year = Datetimeformat([Year], '%Y')
+Latitude = IF IsNull([Latitude]) ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1221" y="1350" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_4532_71b72e4d37e1144d904fcdee045724c3_\Engine_4532_9935cd098881f44d8d3f68a45d35415a~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1125" y="1350" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="City_Pop_SK" selected="True" />
+                <SelectField field="City_SK" selected="True" />
+                <SelectField field="FIPS" selected="True" />
+                <SelectField field="City" selected="True" type="V_String" size="50" />
+                <SelectField field="Population" selected="True" />
+                <SelectField field="Year" selected="True" rename="DateAsOf" type="Date" size="10" />
+                <SelectField field="Longitude" selected="True" type="V_WString" size="30" />
+                <SelectField field="Latitude" selected="True" type="V_WString" size="30" />
+                <SelectField field="Population Year" selected="True" type="Int32" size="4" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="DI_JobID" selected="True" size="80" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="837" y="1350" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>City_Pop_SK</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="453" y="1470" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* 
+from dim_iowa_city</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Liquor
+Query=select dim_iowa_city.* 
+fro...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="City_SK" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="Int32" />
+                <Field name="City" size="50" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="V_WString" />
+                <Field name="FIPS" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="Int32" />
+                <Field name="Latitude" size="30" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="V_WString" />
+                <Field name="Longitude" size="30" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="V_WString" />
+                <Field name="DI_JobID" size="80" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="V_WString" />
+                <Field name="DI_CreateDate" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="645" y="1350" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="City" />
+                <Field field="Longitude" />
+                <Field field="Latitude" />
+                <Field field="FIPS" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="City" />
+                <Field field="Longitude" />
+                <Field field="Latitude" />
+                <Field field="FIPS" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_FIPS" selected="True" input="Left_" />
+                    <SelectField field="Left_City" selected="True" input="Left_" />
+                    <SelectField field="Left_Population" selected="True" input="Left_" />
+                    <SelectField field="Left_Year" selected="True" input="Left_" />
+                    <SelectField field="Left_Longitude" selected="True" input="Left_" />
+                    <SelectField field="Left_Latitude" selected="True" input="Left_" />
+                    <SelectField field="Left_Population Year" selected="True" input="Left_" />
+                    <SelectField field="Right_City_SK" selected="True" input="Right_" />
+                    <SelectField field="Right_City" selected="False" rename="Right_City" input="Right_" />
+                    <SelectField field="Right_FIPS" selected="False" rename="Right_FIPS" input="Right_" />
+                    <SelectField field="Right_Latitude" selected="False" rename="Right_Latitude" input="Right_" />
+                    <SelectField field="Right_Longitude" selected="False" rename="Right_Longitude" input="Right_" />
+                    <SelectField field="Right_DI_JobID" selected="False" rename="Right_DI_JobID" input="Right_" />
+                    <SelectField field="Right_DI_CreateDate" selected="False" rename="Right_DI_CreateDate" input="Right_" />
+                    <SelectField field="Left_DI_CreateDate" selected="True" input="Left_" />
+                    <SelectField field="Left_DI_JobID" selected="True" input="Left_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="549" y="1410" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="City_SK" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="FIPS" selected="True" />
+                <SelectField field="Latitude" selected="True" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="DI_JobID" selected="True" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="741" y="1350" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="FIPS" />
+                <Field field="City" />
+                <Field field="Population" />
+                <Field field="Year" />
+                <Field field="Longitude" />
+                <Field field="Latitude" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1029" y="1350" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="ToNumber(REPLACE(REPLACE(REPLACE([DI_CreateDate],'-',''),' ',''),':',''))" field="DI_JobID" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DI_JobID = ToNumber(REPLACE(REPLACE(REPLACE([DI_CreateDate],'-',''),' ',''),':',...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="933" y="1350" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1221" y="1410" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||FCT_iowa_city_population_by_year</File>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="City_Pop_SK" Dest="City_Pop_SK" />
+                    <Field Source="City_SK" Dest="City_SK" />
+                    <Field Source="FIPS" Dest="FIPS" />
+                    <Field Source="City" Dest="City" />
+                    <Field Source="Population" Dest="Population" />
+                    <Field Source="DateAsOf" Dest="DataAsOf" />
+                    <Field Source="Longitude" Dest="Longitude" />
+                    <Field Source="Latitude" Dest="Latitude" />
+                    <Field Source="Population Year" Dest="Population_Year" />
+                    <Field Source="DI_CreateDate" Dest="DI_CreateDate" />
+                    <Field Source="DI_JobID" Dest="DI_JobID" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Upsert</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Liquor
+Query=FCT_iowa_city_population_by_...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="128" y="2057" width="1261" height="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Dim Stores</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="153" y="2142" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_stores_alteryx.* 
+from stg_iowa_liquor_stores_alteryx</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Staging
+Query=select stg_iowa_liquor_store...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Store" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="Int32" />
+                <Field name="Name" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="V_WString" />
+                <Field name="Store Status" size="10" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="V_WString" />
+                <Field name="Address" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="V_WString" />
+                <Field name="City" size="20" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="V_WString" />
+                <Field name="State" size="20" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="V_WString" />
+                <Field name="Zip Code" size="10" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="V_WString" />
+                <Field name="Store Address" size="80" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="V_WString" />
+                <Field name="Report Date" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="DateTime" />
+                <Field name="Longitude" size="30" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="V_WString" />
+                <Field name="Latitude" size="30" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="273" y="2142" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Store" selected="True" rename="Store_ID" />
+                <SelectField field="Name" selected="True" rename="Store_Name" />
+                <SelectField field="Store Status" selected="True" type="V_String" size="10" />
+                <SelectField field="Address" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="State" selected="True" />
+                <SelectField field="Zip Code" selected="True" />
+                <SelectField field="Store Address" selected="True" />
+                <SelectField field="Report Date" selected="True" />
+                <SelectField field="Longitude" selected="True" type="V_WString" size="30" />
+                <SelectField field="Latitude" selected="True" type="V_WString" size="30" />
+                <SelectField field="County" selected="False" size="50" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="344" y="2142" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF IsNull([Latitude]) THEN '0' ELSE [Latitude] ENDIF" field="Latitude" size="30" type="V_WString" />
+                <FormulaField expression="IF IsNull([Longitude]) THEN '0' ELSE [Longitude] ENDIF" field="Longitude" size="30" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Latitude = IF IsNull([Latitude]) THEN '0' ELSE [Latitude] ENDIF
+Longitude = IF I...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1209" y="2130" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="County_Pop_SK" selected="True" />
+                <SelectField field="FIPS" selected="True" />
+                <SelectField field="County" selected="True" />
+                <SelectField field="Population" selected="True" />
+                <SelectField field="Year" selected="True" rename="DateAsOf" type="Date" size="10" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="Latitude" selected="True" />
+                <SelectField field="Population Year" selected="True" />
+                <SelectField field="County_SK" selected="True" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="DI_JobID" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1305" y="2106" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_18132_558280ec6a335645bc2ded776d33b63e_\Engine_18132_9a2aa38d6966cb4fb7fac74b544c84eb~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="921" y="2130" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>County_Pop_SK</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1113" y="2130" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="ToNumber(REPLACE(REPLACE(REPLACE([DI_CreateDate],'-',''),' ',''),':',''))" field="DI_JobID" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DI_JobID = ToNumber(REPLACE(REPLACE(REPLACE([DI_CreateDate],'-',''),' ',''),':',...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1017" y="2130" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="66">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="717" y="2154" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="City" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="City" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Store_ID" selected="True" input="Left_" />
+                    <SelectField field="Left_Store_Name" selected="True" input="Left_" />
+                    <SelectField field="Left_Store Status" selected="True" input="Left_" />
+                    <SelectField field="Left_Address" selected="True" input="Left_" />
+                    <SelectField field="Left_City" selected="True" input="Left_" />
+                    <SelectField field="Left_State" selected="True" input="Left_" />
+                    <SelectField field="Left_Zip Code" selected="True" input="Left_" />
+                    <SelectField field="Left_Store Address" selected="True" input="Left_" />
+                    <SelectField field="Left_Report Date" selected="True" input="Left_" />
+                    <SelectField field="Left_Longitude" selected="True" input="Left_" />
+                    <SelectField field="Left_Latitude" selected="True" input="Left_" />
+                    <SelectField field="Right_FIPS" selected="False" rename="Right_FIPS" input="Right_" />
+                    <SelectField field="Right_Latitude" selected="False" rename="Right_Latitude" input="Right_" />
+                    <SelectField field="Right_Longitude" selected="False" rename="Right_Longitude" input="Right_" />
+                    <SelectField field="Right_County_SK" selected="True" input="Right_" />
+                    <SelectField field="Right_County" selected="False" rename="Right_County" input="Right_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="296" y="2262" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* 
+from dim_iowa_city</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Liquor
+Query=select dim_iowa_city.* 
+fro...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="PrimaryKey" name="City_SK" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="Int32" />
+                <Field name="City" size="50" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="V_WString" />
+                <Field name="FIPS" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="Int32" />
+                <Field name="Latitude" size="30" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="V_WString" />
+                <Field name="Longitude" size="30" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="V_WString" />
+                <Field name="DI_JobID" size="80" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="V_WString" />
+                <Field name="DI_CreateDate" source="File: odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||select dim_iowa_city.* &#xA;from dim_iowa_city" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="501" y="2250" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="City_SK" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="FIPS" selected="True" />
+                <SelectField field="Latitude" selected="True" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="75">
+          <GuiSettings>
+            <Position x="501" y="2142" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"City"</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">False</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">True</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings>
+            <Position x="633" y="2250" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"City"</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">False</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">True</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="701" width="1573" height="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>DIM_Category_RELOADED</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="773" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* 
+from stg_iowa_liquor_sales_alteryx</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Staging
+Query=select stg_iowa_liquor_sales...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="50" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Store Number" size="50" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Store Name" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Address" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="City" size="30" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Zip Code" size="10" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="WString" />
+                <Field name="Store Location" size="80" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="County Number" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="County" size="20" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Category" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="Category Name" size="50" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Vendor Number" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="Vendor Name" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Item Number" size="20" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Item Description" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Pack" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="Bottle Volume (ml)" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="State Bottle Cost" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="State Bottle Retail" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Bottles Sold" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="Sale (Dollars)" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Volume Sold (Liters)" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Volume Sold (Gallons)" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="DATE" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="DateTime" />
+                <Field name="Longitude" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Latitude" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="212" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Category" selected="True" />
+                <SelectField field="Category Name" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="308" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Category" />
+                <Field field="Category Name" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="84">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="236" y="990" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* 
+from stg_iowa_liquor_products_alteryx</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Staging
+Query=select stg_iowa_liquor_produ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Item Number" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int32" />
+                <Field name="Category Name" size="50" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="V_WString" />
+                <Field name="Item Description" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="V_WString" />
+                <Field name="Vendor" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int32" />
+                <Field name="Vendor Name" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="V_WString" />
+                <Field name="Bottle Volume (ml)" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int32" />
+                <Field name="Pack" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int32" />
+                <Field name="Inner Pack" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int32" />
+                <Field name="Age" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int32" />
+                <Field name="Proof" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int32" />
+                <Field name="UPC" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int64" />
+                <Field name="SCC" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int64" />
+                <Field name="State Bottle Cost" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Double" />
+                <Field name="State Case Cost" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Double" />
+                <Field name="State Bottle Retail" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Double" />
+                <Field name="List Date" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="DateTime" />
+                <Field name="Report Date" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="85">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="380" y="978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Category Name" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="86">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="716" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Category Name" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Category Name" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Category" selected="True" input="Left_" />
+                    <SelectField field="Right_Category Name" selected="True" input="Right_" />
+                    <SelectField field="Right_County" selected="False" rename="Right_County" input="Right_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="88">
+          <GuiSettings>
+            <Position x="536" y="942" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Category Name"</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">False</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">True</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="92">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="860" y="762" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Category" />
+                <Field field="Category Name" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="100">
+          <GuiSettings>
+            <Position x="620" y="762" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Category Name"</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">False</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">True</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="102">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="872" y="942" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Category" />
+                <Field field="Category Name" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="120">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1052" y="750" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_11556_2525165686f90d46bb9bdaa1410f9925_\Engine_11556_e276c9db2b5454448480846c52392add~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="121">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="956" y="930" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\moins\AppData\Local\Temp\Engine_11556_2525165686f90d46bb9bdaa1410f9925_\Engine_11556_1ad84112c4fceb409860d7d2b7885149~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="122">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="956" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Category Name] != "UNKNOWN"</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Category Name] != "UNKNOWN"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="125">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1064" y="858" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <AutoResetMode>ByName</AutoResetMode>
+              <MultiMetaInfo>
+                <MetaInfo name="#1">
+                  <RecordInfo>
+                    <Field name="Category" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" column="1" />
+                    <Field name="Category Name" size="50" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" column="2" />
+                  </RecordInfo>
+                </MetaInfo>
+                <MetaInfo name="#2">
+                  <RecordInfo>
+                    <Field name="Category" source="Formula: IF IsNull([Category]) THEN -9999 ELSE [Category] ENDIF" type="Int32" column="1" />
+                    <Field name="Category Name" size="50" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" column="2" />
+                  </RecordInfo>
+                </MetaInfo>
+              </MultiMetaInfo>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ManualDelayed</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="127">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1256" y="858" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="ToNumber(REPLACE(REPLACE(REPLACE([DI_CreateDate],'-',''),' ',''),':',''))" field="DI_JobID" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DI_JobID = ToNumber(REPLACE(REPLACE(REPLACE([DI_CreateDate],'-',''),' ',''),':',...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="128">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="1340" y="858" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>Category_SK</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="129">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1412" y="858" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Category_SK" selected="True" />
+                <SelectField field="Category" selected="True" rename="Category_Number" />
+                <SelectField field="Category Name" selected="True" />
+                <SelectField field="DI_CreateDate" selected="True" type="DateTime" size="19" />
+                <SelectField field="DI_JobID" selected="True" type="V_String" size="80" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="131">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1496" y="858" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||Dim_iowa_liquor_Product_Categories</File>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="Category_SK" Dest="Category_SK" />
+                    <Field Source="Category_Number" Dest="Category_Number" />
+                    <Field Source="Category Name" Dest="Category_Name" />
+                    <Field Source="DI_CreateDate" Dest="DI_CreateDate" />
+                    <Field Source="DI_JobID" Dest="DI_JobID" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Upsert</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Liquor
+Query=Dim_iowa_liquor_Product_Cate...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="132">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="488" y="762" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF IsNull([Category Name]) THEN 'Unknown' ELSE [Category Name] ENDIF" field="Category Name" size="50" type="V_WString" />
+                <FormulaField expression="IF IsNull([Category]) THEN -9999 ELSE [Category] ENDIF" field="Category" size="4" type="Int32" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Category Name = IF IsNull([Category Name]) THEN 'Unknown' ELSE [Category Name] E...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="133">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1148" y="858" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="118">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="137" y="2465" width="1557" height="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>DIM_Vendor_RELOADED</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="104">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="162" y="2526" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* 
+from stg_iowa_liquor_sales_alteryx</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Staging
+Query=select stg_iowa_liquor_sales...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="50" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Store Number" size="50" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Store Name" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Address" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="City" size="30" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Zip Code" size="10" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="WString" />
+                <Field name="Store Location" size="80" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="County Number" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="County" size="20" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Category" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="Category Name" size="50" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Vendor Number" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="Vendor Name" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Item Number" size="20" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Item Description" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Pack" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="Bottle Volume (ml)" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="State Bottle Cost" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="State Bottle Retail" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Bottles Sold" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="Sale (Dollars)" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Volume Sold (Liters)" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Volume Sold (Gallons)" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="DATE" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="DateTime" />
+                <Field name="Longitude" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Latitude" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_sales_alteryx.* &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="105">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="294" y="2526" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Vendor Number" selected="True" />
+                <SelectField field="Vendor Name" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="106">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="389" y="2526" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="107">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="318" y="2742" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <File RecordLimit="" FileFormat="23">odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* 
+from stg_iowa_liquor_products_alteryx</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <ReadCentroids>False</ReadCentroids>
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Staging
+Query=select stg_iowa_liquor_produ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Item Number" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int32" />
+                <Field name="Category Name" size="50" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="V_WString" />
+                <Field name="Item Description" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="V_WString" />
+                <Field name="Vendor" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int32" />
+                <Field name="Vendor Name" size="100" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="V_WString" />
+                <Field name="Bottle Volume (ml)" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int32" />
+                <Field name="Pack" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int32" />
+                <Field name="Inner Pack" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int32" />
+                <Field name="Age" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int32" />
+                <Field name="Proof" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int32" />
+                <Field name="UPC" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int64" />
+                <Field name="SCC" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int64" />
+                <Field name="State Bottle Cost" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Double" />
+                <Field name="State Case Cost" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Double" />
+                <Field name="State Bottle Retail" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Double" />
+                <Field name="List Date" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="DateTime" />
+                <Field name="Report Date" source="File: odbc:DSN=IOWA_Staging;UID=root;PWD=__EncPwd1__|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="108">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="462" y="2730" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Vendor" selected="True" />
+                <SelectField field="Vendor Name" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="110">
+          <GuiSettings>
+            <Position x="618" y="2694" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Vendor","Vendor Name"</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">False</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">True</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="111">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="942" y="2514" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Vendor Number" />
+                <Field field="Vendor Name" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="112">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="510" y="2514" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF IsNull([Vendor Name]) THEN 'Unknown' ELSE [Vendor Name]  ENDIF" field="Vendor Name" size="100" type="V_WString" />
+                <FormulaField expression="IF IsNull([Vendor Number]) THEN -9999 ELSE [Vendor Number] ENDIF" field="Vendor Number" size="4" type="Int32" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Vendor Name = IF IsNull([Vendor Name]) THEN 'Unknown' ELSE [Vendor Name]  ENDIF
+...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="114">
+          <GuiSettings>
+            <Position x="702" y="2514" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Vendor Number","Vendor Name"</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">False</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">True</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="116">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="954" y="2694" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Vendor Number" />
+                <Field field="Vendor Name" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="119">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="822" y="2526" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Vendor Name" />
+                <Field field="Vendor Number" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Vendor Name" />
+                <Field field="Vendor" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Vendor Number" selected="True" input="Left_" />
+                    <SelectField field="Left_Vendor Name" selected="True" input="Left_" />
+                    <SelectField field="Right_Vendor Name" selected="False" rename="Right_Vendor Name" input="Right_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="134">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1074" y="2598" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <AutoResetMode>ByName</AutoResetMode>
+              <MultiMetaInfo>
+                <MetaInfo name="#1">
+                  <RecordInfo>
+                    <Field name="Vendor Number" source="Formula: IF IsNull([Vendor Number]) THEN -9999 ELSE [Vendor Number] ENDIF" type="Int32" column="1" />
+                    <Field name="Vendor Name" size="100" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" column="2" />
+                  </RecordInfo>
+                </MetaInfo>
+                <MetaInfo name="#2">
+                  <RecordInfo>
+                    <Field name="Vendor Number" source="Formula: IF IsNull([Vendor Number]) THEN -9999 ELSE [Vendor Number] ENDIF" type="Int32" column="1" />
+                    <Field name="Vendor Name" size="100" source="Formula: Trim([_CurrentField_],&quot;  &quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" column="2" />
+                  </RecordInfo>
+                </MetaInfo>
+              </MultiMetaInfo>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ManualDelayed</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="135">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1266" y="2598" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="ToNumber(REPLACE(REPLACE(REPLACE([DI_CreateDate],'-',''),' ',''),':',''))" field="DI_JobID" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DI_JobID = ToNumber(REPLACE(REPLACE(REPLACE([DI_CreateDate],'-',''),' ',''),':',...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="136">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="1350" y="2598" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>Vendor_SK</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="137">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1446" y="2598" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Vendor_SK" selected="True" />
+                <SelectField field="Vendor Number" selected="True" />
+                <SelectField field="Vendor Name" selected="True" />
+                <SelectField field="DI_CreateDate" selected="True" type="DateTime" size="19" />
+                <SelectField field="DI_JobID" selected="True" type="V_String" size="80" />
+                <SelectField field="Category" selected="False" rename="Category_Number" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="138">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1158" y="2598" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="139">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1566" y="2598" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=IOWA_Liquor;UID=root;PWD=__EncPwd1__|||Dim_iowa_liquor_Vendors</File>
+              <Passwords>4454D36CCB00649726C5C273D933D31583433097C6493373CFAE41E00610C</Passwords>
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="Vendor_SK" Dest="Vendor_SK" />
+                    <Field Source="Vendor Number" Dest="Vendor_Number" />
+                    <Field Source="Vendor Name" Dest="Vendor_Name" />
+                    <Field Source="DI_CreateDate" Dest="DI_CreateDate" />
+                    <Field Source="DI_JobID" Dest="DI_JobID" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Upsert</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=IOWA_Liquor
+Query=Dim_iowa_liquor_Vendors</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="140" Connection="Output" />
+      <Destination ToolID="142" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="141" Connection="Output" />
+      <Destination ToolID="149" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="142" Connection="Output" />
+      <Destination ToolID="144" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="143" Connection="Left" />
+      <Destination ToolID="145" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="144" Connection="Output" />
+      <Destination ToolID="143" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="149" Connection="Output26" />
+      <Destination ToolID="143" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="150" Connection="Output" />
+      <Destination ToolID="153" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="151" Connection="Output" />
+      <Destination ToolID="150" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="152" Connection="Output" />
+      <Destination ToolID="151" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="153" Connection="Output" />
+      <Destination ToolID="154" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="145" Connection="Unique" />
+      <Destination ToolID="152" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Unique" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Unique" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="53" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="53" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Join" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="45" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="45" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Join" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Unique" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="75" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Join" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="78" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output26" />
+      <Destination ToolID="66" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Output26" />
+      <Destination ToolID="66" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="82" Connection="Unique" />
+      <Destination ToolID="132" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Output" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="Output" />
+      <Destination ToolID="88" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="Left" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="Join" />
+      <Destination ToolID="102" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output26" />
+      <Destination ToolID="86" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Output26" />
+      <Destination ToolID="86" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Unique" />
+      <Destination ToolID="122" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="102" Connection="Unique" />
+      <Destination ToolID="121" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="102" Connection="Unique" />
+      <Destination ToolID="125" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="122" Connection="True" />
+      <Destination ToolID="125" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="122" Connection="True" />
+      <Destination ToolID="120" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="125" Connection="Output" />
+      <Destination ToolID="133" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="127" Connection="Output" />
+      <Destination ToolID="128" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="128" Connection="Output" />
+      <Destination ToolID="129" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="129" Connection="Output" />
+      <Destination ToolID="131" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="132" Connection="Output" />
+      <Destination ToolID="100" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="133" Connection="Output" />
+      <Destination ToolID="127" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="Output" />
+      <Destination ToolID="105" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="105" Connection="Output" />
+      <Destination ToolID="106" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="106" Connection="Unique" />
+      <Destination ToolID="112" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="107" Connection="Output" />
+      <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="108" Connection="Output" />
+      <Destination ToolID="110" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="110" Connection="Output26" />
+      <Destination ToolID="119" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="114" Connection="Output26" />
+      <Destination ToolID="119" Connection="Left" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="111" Connection="Unique" />
+      <Destination ToolID="134" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="116" Connection="Unique" />
+      <Destination ToolID="134" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="112" Connection="Output" />
+      <Destination ToolID="114" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="119" Connection="Left" />
+      <Destination ToolID="111" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="119" Connection="Join" />
+      <Destination ToolID="116" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="134" Connection="Output" />
+      <Destination ToolID="138" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="135" Connection="Output" />
+      <Destination ToolID="136" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="136" Connection="Output" />
+      <Destination ToolID="137" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="137" Connection="Output" />
+      <Destination ToolID="139" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="138" Connection="Output" />
+      <Destination ToolID="135" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Iowa_Sales_Dimensions</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="142e6f7d-acd6-4d00-a21d-1250aee81808" />
+      <Telemetry>
+        <PreviousWorkflowId value="67a477a2-4f26-4c68-a1a9-656e4e819af4" />
+        <OriginWorkflowId value="97871e8f-acfd-4a0a-8fcc-d6bcf7921aa0" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
