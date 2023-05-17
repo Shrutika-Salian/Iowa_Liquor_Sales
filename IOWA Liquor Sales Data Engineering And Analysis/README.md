@@ -6,3 +6,6 @@
 Also, managed Summation related to Sales Line total and Sales Header total to track each invoice and total of products in them.
 
 ♦ Reported the actionable KPI's on PowerBI and Tableau to measure sales of liqiour in Liters and gallon versus population groth in County and city, also the list of vendors with highest sales, profit over 10 years and per capita sales.
+
+Dimensional Model:
+<img width="1093" alt="image" src="https://github.com/Shrutika-Salian/Iowa_Liquor_Sales/assets/91072559/bafbad85-616c-4031-b3ed-37b5e7fb4447">
